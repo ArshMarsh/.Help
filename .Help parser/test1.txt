@@ -1,0 +1,8 @@
+start
+
+@aSet <<<< "a.txt";
+if (|@aSet| == 0){
+	print("empty set");
+}
+
+stop

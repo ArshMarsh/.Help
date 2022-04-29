@@ -1,0 +1,88 @@
+start
+
+#test for declaration
+int1 = 10;
+int2 = 20;
+double1 = 1.5;
+double2 = double1;
+str1 = "Hello World";
+bool1 = True;
+bool2 = False;
+
+
+
+##test for loops
+test for conditions##
+
+while(|@set1| <= 10){   
+    if(bool1 == bool2){
+        int3 = int1 + int2;
+        bool2 = False;
+    }
+    elif(int1 < int2){
+        int1 = int1 + 5;
+        bool2 = true;
+    }
+    elif(int1 == int2){
+        @set1 + int3;
+        int1 = int1 + 5;
+        bool2 = true;
+    }
+    else{
+        @set1 + "the else part";
+    }
+}
+
+@set2 = @set1;
+
+#test for set operations
+
+for(i = |@set2|; i <= 0; i = i - 1;){
+    @set2 ^ a --> "the else part";
+    for(k = |@set1|; k <= 0; k = k - 1;){
+        @set2 ^ 5 --> "changed";
+        @set2 ^ b --> "changed";
+    }
+}
+
+@set2 <<<< console;
+@set2 >>>> "afile.txt";
+@set1 >>>> "anotherFile.txt";
+
+@set2 delete (); #set2 is deleted
+
+@set3 = @set1;
+@set3 + double1;
+@set4 + "the else part";
+
+
+@setUnion = @set1 -U- @set3;
+@allSetsUnion = @set1 -U- @set3 -U- @set4;
+@setIntersection = @set4 -N- @set1;
+@setDiffernece = @set3 -D- @set1;
+@setComplement = ~@set4 ;
+
+@multipleSetOp1 = @set1 -U- @set3 -N- @set4;
+@multipleSetOp2 = @set1 -N- @set3 -D- @set4;
+@multipleSetOp2 = @set1 -U- @set4 -N- @set3 -D- @set1;
+
+#test for functions
+
+@ function functionUnion(@setEx1, @setEx2){
+    @setU = @setEx1 -U- @setEx2;
+    return @setU;
+}
+
+@ function functionAddInt(@setEx1, int exp){
+    @setEx1 + exp;
+}
+
+function simpleAdd(int var1, double var2){
+    finalVar = var1 + var2;
+    return finalVar;
+}
+simpleAdd[int2, double2];
+@functionAddInt[@set1, int2];
+@functionUnion[@set1, @set3];
+
+stop

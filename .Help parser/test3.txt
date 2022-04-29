@@ -1,0 +1,15 @@
+start
+
+@ function removeAnElement( @set, int element) {
+
+	@set ~ element;
+	return @set;
+}
+
+@setFromFile <<<< "input.txt";
+@newSet = @removeAnElement[@setFromFile, 3];
+@newSet >>>> console;
+
+stop
+
+

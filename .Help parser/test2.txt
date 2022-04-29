@@ -1,0 +1,15 @@
+start
+
+@firstSet = 1_2_3;
+@secondSet = 4_5_6;
+@thirdSet = @first_set -U- @second_set;
+
+@thirdSet >>>> console;
+
+@thirdSet >>>> "output.txt";
+
+@firstSet.delete();
+@secondSet.delete();
+@thirdSet.delete();
+
+stop
